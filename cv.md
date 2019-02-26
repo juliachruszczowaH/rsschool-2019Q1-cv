@@ -16,7 +16,7 @@ Tools: Selenium WebDriver, Soap UI,  InDesign, TestLink, Charles, VirtualBox.
 
 ------
 ### Experience
-------
+
 * September 2017 – up to now :  **QA Engineer** at SVAPS Systems
 * April 2015 – September 2017 : **QA Engineer** at  Dual LAb 
 * March 2011 - April 2015: **Specialist** at State-owned Institution
