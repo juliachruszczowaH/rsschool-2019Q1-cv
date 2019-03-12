@@ -2,27 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: block;
 }
+title {
+    display: none;
+}
+.header-wrapper{
+    display: flex;
+    background-color: #404145;
+    height: 240px;
 
+}
 body {
     font-family: "Ubuntu";
     max-width: 1024px;
     margin: 0 auto;
 }
 
-main {
-    background-color: #D5DED9;
-}
 
 .main-heading {
-    background-color: #404145;
     color: whitesmoke;
-    height: 20vh;
     position: relative;
+    width: 465px;
     z-index: 1;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #404145;
+    margin-left: 50px;
+    display: flex;
 }
 
 .title {
@@ -63,9 +67,11 @@ aside {
 .toc {
     background-color: #ece6e3;
     position: relative;
-    top: 0em;
+    top: 3em;
     left: 1em;
     padding: 1em;
+    z-index: 1;
+    min-width: 255px;
 }
 
 .section-heading, .section-languages {
@@ -99,9 +105,6 @@ h2 {
     letter-spacing: 8px;
 }
 
-.social-media a:visited {
-    color: #800080;
-}
 
 .fab {
     color: #20816d;
@@ -129,6 +132,10 @@ h2 {
     padding-bottom: 40px;
 }
 
+.main-info {
+    width: 70%;
+    float: right;
+}
 h2, .position-title {
     font-family: "Comfortaa";
     text-transform: uppercase;
@@ -140,27 +147,33 @@ h2 {
     font-size: 26px;
     padding-bottom: 15px;
 }
+h3 {
+    color: #20816d;
+}
 
-.work {
+.work, .skills {
     background-color: white;
-    width: 70%;
-    float: right;
     text-align: center;
-    margin-top: 30px;
+    position: relative;
 }
-
+.work{
+    top:  95px;
+}
+.skills{
+    top:  25px;
+}
+.skills-description {
+    list-style-type: square;
+    line-height: 25px;
+    text-align: center;
+}
 .position-title {
-    font-size: 20px;
-    margin-top: 40px;
-}
-
-.company-name {
-    font-size: 18px;
-    margin-top: 5px;
+    font-size: 16px;
+    margin-top: 17px;
 }
 
 .dates {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 8px;
 }
 
@@ -173,8 +186,9 @@ h2 {
 
 .job-description {
     list-style-type: square;
-    line-height: 25px;
+    line-height: 16px;
     text-align: center;
+    font-size: 14px;
 }
 
 div > a {
@@ -184,13 +198,17 @@ div > a {
 }
 
 .hex-image {
-    width: 300px;
+    min-width: 300px;
     height: 300px;
     background: url(../image/image1.png) no-repeat;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-size: cover;
     background-position: 30% 11%;
-    border: 2px solid white;
+    display: flex;
+    position: relative;
+    left: 25px;
+    top: 20px;
+    z-index: 2;
    
 }
 
